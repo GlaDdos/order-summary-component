@@ -1,0 +1,180 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding-top: 3%;
+}
+.component {
+    max-width: 500px;
+    -webkit-box-shadow: -7px 26px 32px -8px rgba(77, 79, 106, 1);
+    -moz-box-shadow: -7px 26px 32px -8px rgba(77, 79, 106, 1);
+    box-shadow: -7px 26px 32px -8px rgba(77, 79, 106, 1);
+
+    border-radius: 15px;
+    background-color: white;
+
+    margin: 0 auto;
+}
+
+.component-image {
+    background-image: url("/images/illustration-hero.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+
+    border-radius: 15px 15px 0 0%;
+}
+
+.component-body {
+    padding: 40px;
+}
+
+p.bold {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 0;
+}
+
+p.center {
+    text-align: center;
+    line-height: 150%;
+}
+
+p.grey {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.18rem;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #F8F9FE;
+    padding: 1rem;
+    margin: 2.1rem 0;
+    border-radius: 10px;
+}
+
+.flex-row a {
+    font-weight: bold;
+}
+
+
+.flex-row a:hover,
+.flex-row a:active
+{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.inline>p{
+    margin: 0 ;
+    padding-right: 100px;
+    font-size: 1.2rem;
+}
+
+.inline>p.bold {
+    font-size: 1rem;
+}
+
+.inline>p.gray {
+    color: #757a8b;
+}
+
+.icon {
+    height: 56px;
+    max-width: 100%;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: #F8F9FE;
+    font-weight: bold;
+}
+
+.btn-proceed:hover, .btn-proceed:active {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: #757a8b;
+    font-weight: bold;
+}
+
+.btn-cancel:hover, .btn-cancel:active {
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .component {
+        max-width: 375px;
+    }
+
+    .component-image {
+        height: 180px;
+    }
+
+    .component-body {
+        padding: 25px;
+    }
+
+    p.bold {
+        font-size: 1.5rem;
+    }
+
+    p.grey {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .inline>p{
+        padding-right: 10px;
+        font-size: 1rem;
+    }
+
+    .inline>p.bold {
+        font-size: 0.95rem;
+    }
+
+    .flex-row a {
+        font-weight: bold;
+        font-size: 0.85rem;
+    }
+
+    .icon {
+        height: 48px;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+
+}
